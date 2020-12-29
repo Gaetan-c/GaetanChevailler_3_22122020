@@ -2,8 +2,10 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ohmyfood</title>
-        <link type="text/css" rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="monprojet3bis/style.css">
+        
         <script src="https://kit.fontawesome.com/8e5ac735b3.js" crossorigin="anonymous"></script>
         <!-- logo et titre : police Shrikhand
             autre texte : police Roboto-->
@@ -20,24 +22,25 @@
                 Autre page : ajouter une flèche pour retourner en arrière-->
                 <a href="index.html" id="logo"><img src="IMG/ohmyfood.svg" alt=""></a>
 
-            
         </header>
+
             <!--La page d'accueil indique la localisation des restaurants !-->
             <!--barre de localisation grise-->
         
-            <p class="localisation"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p></div>
+            <p class="localisation"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
 
+        <main class="grid">
             <!--Carré de texte avec un bouton "Explorer nos restaurants"-->
             <div class="presentation">
                 <p class="strong"><strong>Réservez le menu qui vous convient</strong></p>
                 <p>Découvrez des restaurants d'exceptions, <br> séléctionnés par nos soins.</p>
-                <button class="button" href="#restaurants" type="button">Explorer nos restaurants</button>
+                <a class="button" href="#restaurants">Explorer nos restaurants</a>
             </div>
 
-        <main class="whitebackground">
+        
             <!--titre "fonctionnement"-->
-            <div class="fonctionnement"></div>
-            <h2>Fonctionnement</h2>
+            <div class="fonctionnement">
+            <h2 id="fonctionnement">Fonctionnement</h2>
             <!--explication étape du fonctionnement avec 3 blocs numérotés
                 dans une bulle. ajouter les logos et les textes-->
                 <div class="contentbox"><p class="nb">1</p><p><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p></div>
@@ -47,12 +50,14 @@
         
         
             <!--titre "restaurants"-->
-            <h2 id="restaurants">Restaurant</h2>
-            <!-- ajouter 4 figures avec photos, nom resto, logo coeur, et logo 'nouveau' sur les 2 premiers-->
-            <a class="photoindex"><figure class="photo_index"><img src="IMG/lapalettedugoût.jpg" alt=""><figcaption class="name_index"><strong>La palette du goût</strong><br>Ménilmontant<i class="far fa-heart"></i></figcaption><p class="new">Nouveau</p></figure></a>
-            <a class="photoindex"><figure class="photo_index verticale"><img src="IMG/lanoteenchantée.jpg" alt=""><figcaption class="name_index"><strong>La note enchantée</strong><br>Charonne<i class="far fa-heart"></i></figcaption><p class="new">Nouveau</p></figure></a>
-            <a class="photoindex"><figure class="photo_index"><img src="IMG/alafrançaise.jpg" alt=""><figcaption class="name_index"><strong>À la française</strong><br>Cité Rouge<i class="far fa-heart"></i></figcaption></figure></a>
-            <a class="photoindex"><figure class="photo_index"><img src="IMG/ledélicedessens.jpg" alt=""><figcaption class="name_index"><strong>Le délice des sens</strong><br>Folie-Méricourt<i class="far fa-heart"></i></figcaption></figure></a>
+            <div class="platsindex">
+                <h2 id="restaurants">Restaurant</h2>
+                <!-- ajouter 4 figures avec photos, nom resto, logo coeur, et logo 'nouveau' sur les 2 premiers-->
+                <a class="photoindex"><figure class="photo_index"><img src="IMG/lapalettedugoût.jpg" alt=""><figcaption class="name_index"><strong>La palette du goût</strong><br>Ménilmontant<i class="far fa-heart"><span></span></i></figcaption></figure><p class="new">Nouveau</p></a>
+                <a class="photoindex"><figure class="photo_index verticale"><img src="IMG/lanoteenchantée.jpg" alt=""><figcaption class="name_index"><strong>La note enchantée</strong><br>Charonne<i class="far fa-heart"></i></figcaption></figure><p class="new">Nouveau</p></a>
+                <a class="photoindex"><figure class="photo_index"><img src="IMG/alafrançaise.jpg" alt=""><figcaption class="name_index"><strong>À la française</strong><br>Cité Rouge<i class="far fa-heart"></i></figcaption></figure></a>
+                <a class="photoindex"><figure class="photo_index"><img src="IMG/ledélicedessens.jpg" alt=""><figcaption class="name_index"><strong>Le délice des sens</strong><br>Folie-Méricourt<i class="far fa-heart"></i></figcaption></figure></a>
+            </div>
 
         </main>
         <footer>
