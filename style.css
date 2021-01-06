@@ -25,6 +25,7 @@ body, main {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 .loader {
@@ -543,17 +544,6 @@ em {
     transform: translateX(1000%);
   }
 }
-/*@keyframes loader{
-    0%{
-        opacity: 1;
-    }
-    99%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}*/
 @keyframes slideUp {
   from {
     transform: translateY(100%);
