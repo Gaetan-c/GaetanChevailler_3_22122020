@@ -586,40 +586,26 @@ em {
 
 @keyframes allofheart {
   0% {
-    color: linear-gradient(160deg, #FF79DA 2%, #9356DC);
-    opacity: 0.2;
-  }
-  30% {
-    color: #9356DC;
-    opacity: 0.3;
-  }
-  40% {
-    color: #9356DC;
     opacity: 0.4;
   }
-  50% {
+  30% {
     font-weight: 600;
-    color: #9356DC;
     opacity: 0.5;
   }
-  60% {
+  50% {
     font-weight: 700;
-    color: #9356DC;
     opacity: 0.6;
   }
   70% {
     font-weight: 800;
-    color: #9356DC;
     opacity: 0.7;
   }
   80% {
     font-weight: 900;
-    color: #9356DC;
     opacity: 0.85;
   }
   100% {
     font-weight: 900;
-    color: linear-gradient(160deg, #FF79DA 2%, #9356DC);
     opacity: 1;
   }
 }
@@ -629,7 +615,10 @@ em {
 }
 
 .fa-heart:hover {
-  animation: allofheart 1.5s ease-out forwards;
+  animation: allofheart 1s ease-out forwards;
+  background: linear-gradient(160deg, #FF79DA 2%, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .contentbox.menu:hover {
