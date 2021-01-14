@@ -5,13 +5,18 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 389){
+@media screen and (min-width: 319px) and (max-width: 400){
 
-    .contentbox.menu{
+    .photoresto{
+        height: 250px;
 
-        .texte{
-            width: 30%;
+        img{
+            height: auto;
         }
+    }
+
+    .platsindex .photoindex{
+        height: 200px;
     }
 }
 
@@ -29,6 +34,10 @@
         bottom: -100px;
         flex-basis: 50%;
     }
+
+    .platsindex .photoindex{
+        height: 300px;
+    }
 }
 
 @media screen and (min-width: 450px) and (max-width: 500px){
@@ -39,6 +48,13 @@
         img{
             height: auto;
         }
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 570px){
+
+    .platsindex .photoindex{
+        height: 350px;
     }
 }
 
