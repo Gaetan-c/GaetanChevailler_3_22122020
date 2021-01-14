@@ -1,0 +1,114 @@
+.platsindex{
+    @include greybg;
+    @include flexcolumn;
+    padding: 40px 15px 50px 15px;
+
+    .photoindex{
+        border-radius: 25px;
+        position: relative;
+        height: 320px;
+        overflow: hidden;
+        margin: 10px 0px;
+        
+        .verticale img{
+            position: absolute;
+            bottom: -40px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .name_index{
+            background-color: #fff;
+            position: absolute;
+            bottom: 0px;
+            padding: 20px;
+            font-size: 1.3em;
+            width: 100%;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        
+            i{
+                position: absolute;
+                top: 30%;
+                left: 75%;
+                font-size: 1.2em;
+            }
+        }
+
+        .new{
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background-color: #99E2D0;
+            font-size: 0.8em;
+            font-weight: 500;
+            padding: 8px;
+            border-radius: 2px;
+            color: #089773;
+        }
+    }
+}
+                            /*Localisation et présentation*/
+
+.localisation{
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+    vertical-align: text-top;
+    color: #353535;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 20px;
+
+    i{
+       padding-right: 10px;
+    }
+}
+
+.presentation{
+    @include flexcolumn;
+    align-items: center;
+    padding-top: 40px;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    p{
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        color: #555;
+    
+        &.strong{
+            width: 60%;
+            font-size: 1.3em;
+            color: #000;
+        }
+    }
+}
+                /*fonctionnement*/
+
+.fonctionnement{
+    @include flexcolumn;
+    background-color: #fff;
+
+    #fonctionnement{
+        padding-left: 15px;
+    }
+
+    .contentbox{
+        text-align: center;
+        overflow: visible;
+        position: relative;
+        background-color: rgba(250, 250, 250, 0.623);
+        align-content: space-around;
+        height: 50px; 
+        align-items: center;
+        box-shadow: 0px 1px 1px -1px #000;
+    }
+
+    .skin{
+        background-color: lighten($secondary-color, 20%);
+    }
+}

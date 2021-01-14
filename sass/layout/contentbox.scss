@@ -1,0 +1,83 @@
+
+.contentbox{
+    @include flexcolumn;
+    justify-content: center;
+    background-color: #fff;
+    margin: 10px 14px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 60px;
+    box-shadow: 0px 1px 1px -1px #000;
+    overflow: hidden;
+    position: relative;
+
+    p{
+        font-weight: 500;
+    }
+
+    &.menu p{
+        padding: 2px;
+        font-weight: 200;
+    
+        strong{
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+    }
+
+    &.menu .texte{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 85%;
+    }
+
+    .price{
+        position: absolute;
+        right: 5%;
+        bottom: 20%;
+        transition: transform 1300ms;
+    }
+
+    i{
+        font-size: 1.1em;
+        margin: 0px 40px 0px 0px;
+        color: rgb(146, 145, 145);
+
+        &.fa-ellipsis-v{
+            margin: 0px 0px 0px 0px;
+        }
+
+        &.fa-bars{
+            margin: 0px 40px 0px 0px;
+        }
+    }
+
+    .nb{
+        position:absolute;
+        background-color: $primary-color;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        color: #fff;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+
+    i.fa-store{
+        color: #9356DC;
+    }
+}
+
+main h3{
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin: 20px 10px 10px 14px;
+}
+
+em{
+    font-style: normal;
+    padding-bottom: 5px;
+    border-bottom: 4px solid $tertiary-color;
+}

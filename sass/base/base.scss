@@ -1,0 +1,53 @@
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color:#99E2D0;
+$gradient-color: linear-gradient(160deg, $secondary-color 2%, $primary-color);
+
+                    /*mixins*/
+@mixin flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin shadowbox{
+    box-shadow: 0px 1px 1px 0px #000;
+}
+
+@mixin greybg{
+    background-color: #f3f0f0;
+}
+
+@mixin whitelinks{
+    color: #fff;
+    text-decoration: none;
+}
+
+                    /*fin des mixins*/
+
+@font-face{
+    font-family: 'Shrikhand';
+    src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap");
+}
+
+*{
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+body, main{
+    @include flexcolumn;
+}
+
+.plats{
+    @include greybg;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}

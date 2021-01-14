@@ -1,0 +1,28 @@
+footer{
+    background-color: #353535;
+    color: #fff;
+    @include flexcolumn;
+    padding: 20px 0px 10px 5%;
+
+    a{
+        @include whitelinks;
+        padding: 3px 0px;
+
+        i{
+            font-size: 0.9em;
+            padding-right: 4px;
+        }
+    }
+
+    #logo_footer{
+        font-family: 'Shrikhand';
+        font-weight: 500;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+

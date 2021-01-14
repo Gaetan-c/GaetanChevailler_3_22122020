@@ -244,6 +244,7 @@ header i {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 85%;
 }
 .contentbox .price {
   position: absolute;
@@ -291,7 +292,7 @@ em {
 
 .button {
   border: none;
-  height: 60px;
+  height: 20px;
   width: 50%;
   font-size: 1em;
   margin: 30px 10% 60px 10%;
@@ -299,10 +300,8 @@ em {
   color: #fff;
   border-radius: 50px;
   align-self: center;
-}
-.button a {
-  color: #fff;
-  text-decoration: none;
+  text-align: center;
+  padding: 20px 0px;
 }
 
 .presentation .button {
@@ -315,6 +314,11 @@ em {
 @media screen and (min-width: 500px) {
   body, main, .photoresto, header, .localisation {
     margin: 0px 5%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 389) {
+  .contentbox.menu .texte {
+    width: 30%;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 450px) {
@@ -565,13 +569,16 @@ em {
 }
 @keyframes loader {
   0% {
-    transform: translateX(0%);
+    opacity: 1;
+    z-index: 9999;
   }
   99% {
-    transform: translateX(0%);
+    opacity: 1;
+    z-index: 9999;
   }
   100% {
-    transform: translateX(1000%);
+    opacity: 0;
+    z-index: -9999;
   }
 }
 @keyframes slideUp {
@@ -597,7 +604,7 @@ em {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-200%);
+    transform: translateX(-220%);
   }
 }
 @keyframes ellipsis {
@@ -605,7 +612,7 @@ em {
     width: 100%;
   }
   to {
-    width: 70%;
+    width: 60%;
   }
 }
 .button:hover, .back:hover {

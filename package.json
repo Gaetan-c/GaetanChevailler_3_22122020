@@ -1,0 +1,12 @@
+{
+  "name": "p3-sass",
+  "version": "1.0.0",
+  "description": "Projet 3 avec scss",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss ./style.css",
+    "prefix": "postcss ./style.css --use autoprefixer"
+  },
+  "author": "",
+  "license": "ISC"
+}

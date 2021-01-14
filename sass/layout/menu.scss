@@ -1,0 +1,44 @@
+.photoresto{
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+
+    .name{
+        border-top-left-radius: 1.5em;
+        border-top-right-radius: 1.5em;
+        background-color: #f3f0f0;
+        width: 100%;
+        position: absolute;
+        padding: 10px 0px;
+        bottom: 0%;
+
+        p{
+            font-family: 'Shrikhand';
+            font-size: 1.7em;
+            padding-left: 15px;
+        }
+    }
+
+    figcaption{
+        position: relative;
+
+        .heart{
+            position: absolute;
+            right: 9%;
+            top: 23%;
+            font-size: 1.4em;
+            font-weight: 100;
+            border: none;
+            background-color: transparent;
+        }
+    }
+}
+
+.verticale img{
+    position: absolute;
+    bottom: -40px;
+}
